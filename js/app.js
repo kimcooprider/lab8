@@ -1,10 +1,27 @@
 console.log('app.js is connected');
 
 
-let welcomeMessage = alert('Hello Corgi Enthusiast');
-let corgiNum = prompt('How many corgis do you own?');
+// let welcomeMessage = alert('Hello Corgi Enthusiast');
+let getNum = true;
 
-console.log('User has this number of corgis',corgiNum);
+while(getNum){
+ let corgiNum = parseInt(prompt('How many corgis do you own?'));
+ if (corgiNum === 5) {
+    alert('Thank you for the number');
+    getNum = false;
+  } else {
+    alert('Please enter a number');
+    }
+ }
+
+
+
+
+
+
+
+
+// console.log('User has this number of corgis',corgiNum);
 
 
 function  getCorgiNum(){
@@ -28,4 +45,4 @@ console.log('proof of life');
 }
 
 
-getCorgiNum();
+// getCorgiNum();

@@ -4,15 +4,15 @@ console.log('app.js is connected');
 let welcomeMessage = alert('Hello Corgi Enthusiast');
 let getNum = true;
 
-while(getNum){
- let corgiNum = parseInt(prompt('How many corgis do you own?'));
- if (corgiNum === 5) {
-    alert('Thank you for the number');
-    getNum = false;
-  } else {
-    alert('Please enter a number');
-    }
- }
+// while(getNum){
+//  let corgiNum = parseInt(prompt('How many corgis do you own?'));
+//  if (corgiNum === 5) {
+//     alert('Thank you for the number');
+//     getNum = false;
+//   } else {
+//     alert('Please enter a number');
+//     }
+//  }
 
 //  function howManyCorgi(){
 
@@ -38,34 +38,34 @@ while(getNum){
  
  
  
-//  let imageElement = document.getElementById('imageSection');
+ let imageElement = document.getElementById('imageSection');
 
 
-//  let userInput = prompt('How many images would you like to see?');
-//  console.log('Our user input is of type: ',typeof(userInput));
+ let userInput = prompt('How many images would you like to see?');
+ console.log('Our user input is of type: ',typeof(userInput));
  
  
-//  let userInputParsed = parseInt(userInput);
-//  console.log('user input parsed to int: ', userInputParsed)
+ let userInputParsed = parseInt(userInput);
+ console.log('user input parsed to int: ', userInputParsed)
  
-//  if(!isNaN(userInputParsed)){
-//    console.log('we have a valid number for input');
-//  } else {
-//    userInputParsed = parseInt(prompt('How many images? Enter a Number.'));
-//  }
-//  console.table(typeof(userInput));
+ if(!isNaN(userInputParsed)){
+   console.log('we have a valid number for input');
+ } else {
+   userInputParsed = parseInt(prompt('How many images? Enter a Number.'));
+ }
+ console.table(typeof(userInput));
 
 
-//  for(let i = 0; i < userInputParsed; i++){
-//   // console.log('proof of life', i);
-//   let listImage = document.createElement('li');
-//   listImage.textContent = `image number ${i + 1}`;
-//   let image = document.createElement('img');
-//   image.setAttribute('src', 'images/codeImage.png');
-//   listImage.appendChild(image);
-//   console.log(listImage);
-//   imageElement.appendChild(listImage);
-// }
+ for(let i = 0; i < userInputParsed; i++){
+  // console.log('proof of life', i);
+  let listImage = document.createElement('li');
+  listImage.textContent = `image number ${i + 1}`;
+  let image = document.createElement('img');
+  image.setAttribute('src', 'images/IMG_6287.jpg');
+  listImage.appendChild(image);
+  console.log(listImage);
+  // imageElement.appendChild(listImage);
+}
 
 
 // function  getCorgiNum(){

@@ -2,7 +2,7 @@ console.log('app.js is connected');
 
 
 let welcomeMessage = alert('Hello Corgi Enthusiast');
-let getNum = true;
+// let getNum = true;
 
 // while(getNum){
 //  let corgiNum = parseInt(prompt('How many corgis do you own?'));
@@ -35,11 +35,10 @@ let getNum = true;
 //   }
 //   howManyCorgi();
  
- 
- 
- 
- let imageElement = document.getElementById('imageSection');
-
+  
+//  grab ul with image section id from index.html
+ let imageElement = document.getElementById('corgiPic');
+console.log('here is the corgi pic',imageElement);
 
  let userInput = prompt('How many images would you like to see?');
  console.log('Our user input is of type: ',typeof(userInput));
@@ -56,15 +55,16 @@ let getNum = true;
  console.table(typeof(userInput));
 
 
- for(let i = 0; i < userInputParsed; i++){
-  // console.log('proof of life', i);
+ for(let i = 1; i <= userInputParsed; i++){
+  console.log('proof of life', i);
   let listImage = document.createElement('li');
-  listImage.textContent = `image number ${i + 1}`;
+  // listImage.textContent = `corgi ${i}`;
+  listImage.textContent = 'corgi ' + i;
   let image = document.createElement('img');
   image.setAttribute('src', 'images/IMG_6287.jpg');
   listImage.appendChild(image);
   console.log(listImage);
-  // imageElement.appendChild(listImage);
+  imageElement.appendChild(listImage);
 }
 
 
